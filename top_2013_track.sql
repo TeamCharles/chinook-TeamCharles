@@ -1,6 +1,6 @@
 SELECT MAX("Number of Downloads") AS "Number of Downloads", "Track Name"
 FROM (
-SELECT T.Name AS "Track Name", SUM(L.TrackId) AS "Number of Downloads"
+SELECT T.Name AS "Track Name", SUM(L.Quantity) AS "Number of Downloads"
 FROM InvoiceLine AS L
 JOIN Track AS T
 	ON T.TrackId = L.TrackId
