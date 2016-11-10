@@ -4,5 +4,5 @@ from (
 	from InvoiceLine
 	join Track on InvoiceLine.TrackId = Track.TrackId
 	join MediaType on Track.MediaTypeId = MediaType.MediaTypeId
-	order by MediaType.MediaTypeId
+	group by MediaType.MediaTypeId
 )

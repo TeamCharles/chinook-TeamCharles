@@ -6,4 +6,5 @@ from (
 	join Customer on Invoice.CustomerId = Customer.CustomerId
 	join Employee on Customer.SupportRepId = Employee.EmployeeId
 	where Invoice.InvoiceDate like "2009%"
+	group by "Sales Agent"
 )
