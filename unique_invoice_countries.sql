@@ -1,2 +1,2 @@
-select distinct BillingCountry from Invoice
+select BillingCountry from Invoice
 group by BillingCountry
